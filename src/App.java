@@ -62,3 +62,21 @@ public class App {
 
                 default:
                     System.out.println("esa opcion no existe");
+
+            }
+        }
+
+    }
+
+    public static boolean nombreFuncion(String[] lote, String nombreBuscado) {
+
+        for (int i = 0; i < lote.length; i++) {
+
+            if (lote[i] != null && lote[i].equals(nombreBuscado)) {
+                return true;
+            }
+
+        }
+        return false;
+
+    }
